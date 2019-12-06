@@ -7,6 +7,6 @@ public class Main {
         list.insert(88);
         list.insert(105);
 
-        System.out.println(LinkedList);
+
     }
     }
