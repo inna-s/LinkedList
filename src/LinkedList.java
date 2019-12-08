@@ -1,18 +1,31 @@
 public class LinkedList {
-    Node head;
+    private Node head;
+
+    public LinkedList() {
+        head = null;
+    }
+
+    private boolean IsEmpty() {
+        return head == null;
+    }
 
     public void insert(int data) {
-        Node node = new Node();
-        node.data = data;
-        node.next=null;
-        if (head == null) {
-            head = node;
-        } else {
-            Node n = head;
-            while (n.next != null) ;
-            {
-                n.next = n;
+        Node direction = new Node(data);
+        direction.next = head;
+        head = direction;
 
-            }
-            n.next = node;
-        }}}
+    }
+
+    public void print() {
+        Node direction = head;
+        while (direction != null) {
+            System.out.println(direction.data);
+            direction = direction.next;
+
+
+        }
+    }
+}
+
+
+
