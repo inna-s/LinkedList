@@ -5,6 +5,7 @@ public class Main {
         list.insert(67);
         list.insert(175);
         list.insert(97);
+        list.insert(9);
         list.print();
 
     }

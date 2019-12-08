@@ -1,18 +1,21 @@
 public class LinkedList {
     private Node head;
 
-    public LinkedList() {
-        head = null;
-    }
-
-    private boolean IsEmpty() {
-        return head == null;
-    }
-
     public void insert(int data) {
         Node direction = new Node(data);
-        direction.next = head;
-        head = direction;
+        direction.next = null;
+        if (head == null) {
+            head = direction;
+        } else {
+            Node following = head;
+            while (following.next == null) {
+                following.next = direction;
+                
+
+
+
+            }
+        }
 
     }
 
