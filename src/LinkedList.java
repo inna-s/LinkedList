@@ -8,16 +8,15 @@ public class LinkedList {
             head = direction;
         } else {
             Node following = head;
-            while (following.next == null) {
-                following.next = direction;
-                
-
-
-
+            while (following.next != null) {
+                following = following.next;
             }
-        }
+            following.next = direction;
 
+
+        }
     }
+
 
     public void print() {
         Node direction = head;
