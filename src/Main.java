@@ -8,5 +8,8 @@ public class Main {
         list.insert(9);
         list.print();
 
+
+        System.out.println(list.size());
+
     }
-    }
+}
