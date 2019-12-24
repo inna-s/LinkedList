@@ -1,4 +1,4 @@
-public class LinkedList {
+public class LinkedList implements Scroll {
     private Node head;
     private int size;
 
@@ -26,7 +26,6 @@ public class LinkedList {
             direction = direction.next;
         }
     }
-
     public int size() {
         if (head == null) return 0;
         {
